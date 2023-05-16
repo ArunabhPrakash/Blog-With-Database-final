@@ -1,14 +1,48 @@
 
-<%- include("partials/header"); -%>
-    <h1>Compose</h1>
-    <form class="" action="/compose" method="post">
-      <div class="form-group">
-        <label>Title</label>
-        <input class="form-control" type="text" name="postTitle">
-        <label>Post</label>
-        <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+<%- include("partials/header"); -%>//1
+    <h1>Compose</h1>//2
+    <form class="" action="/compose" method="post">//3
+      <div class="form-group">//4
+        <label>Title</label>//5
+        <input class="form-control" type="text" name="postTitle">//6
+        <label>Post</label>//7
+        <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>//8
       </div>
-      <button class="btn btn-primary" type="submit" name="button">Publish</button>
-    </form>
+      <button class="btn btn-primary" type="submit" name="button">Publish</button>//9
+    </form>//10
 
-<%- include("partials/footer"); -%>
+<%- include("partials/footer"); -%>//11
+/*
+The code you provided is using a templating engine, likely EJS, to dynamically render content in an HTML document. Let's break it down:
+
+1.
+   - This code includes the content of the "header" partial file at this position in the HTML document. The `-` characters are used to trim any whitespace that might be generated during the inclusion process.
+
+2.
+   - This line renders an HTML heading element (`<h1>`) with the text "Compose".
+
+3.
+   - This line starts an HTML form with an action set to "/compose" and a method set to "post". This form is used to submit data to the "/compose" route.
+
+4.
+   - This line starts a div element with the class "form-group". This class is commonly used in Bootstrap to style form elements.
+
+5.
+   - This line renders an HTML label element with the text "Title".
+
+6.
+   - This line renders an HTML input element of type "text" with the class "form-control". The name attribute is set to "postTitle", which is used to identify the input when the form is submitted.
+
+7.
+   - This line renders an HTML label element with the text "Post".
+
+8.
+   - This line renders an HTML textarea element with the class "form-control". The name attribute is set to "postBody", which is used to identify the textarea when the form is submitted. The rows and cols attributes define the size of the textarea.
+
+9.
+   - This line renders an HTML button element with the classes "btn" and "btn-primary". The type attribute is set to "submit", indicating that this button will submit the form when clicked. The name attribute is set to "button".
+10.
+    - This line marks the end of the HTML form.
+11.
+    - This code includes the content of the "footer" partial file at this position in the HTML document. The `-` characters are used to trim any whitespace that might be generated during the inclusion process.
+Overall, this code renders a form for composing a new post. It includes input fields for the post's title and content. When the "Publish" button is clicked, the form data is submitted to the "/compose" route. The header and footer partials are included to provide consistent structure and styling to the HTML document.*/

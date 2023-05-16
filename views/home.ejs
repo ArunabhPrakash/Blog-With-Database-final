@@ -1,20 +1,51 @@
 
-<%- include("partials/header"); -%>
+<%- include("partials/header"); -%>//1
 
-    <h1>Home</h1>
-    <p> <%= startingContent %> </p>
+    <h1>Home</h1>//2
+    <p> <%= startingContent %> </p>//3
 
 
-  <%  posts.forEach(function(post){ %>
+  <%  posts.forEach(function(post){ %>//4
 
-    <h1><%=post.title%></h1>
+    <h1><%=post.title%></h1>//5
     <p>
-    <%=post.content.substring(0, 100) + " ..."%>
-    <a href="/posts/<%=post._id%>">Read More</a>
+    <%=post.content.substring(0, 100) + " ..."%>//6
+    <a href="/posts/<%=post._id%>">Read More</a>//7
     </p>
 
 
-    <% }) %>
+    <% }) %>//8
 
 
-<%- include("partials/footer"); -%>
+<%- include("partials/footer"); -%>//9
+/*
+The code you provided is using a templating engine, likely EJS, to dynamically render content in an HTML document. Let's break it down:
+
+1.
+   - This code includes the content of the "header" partial file at this position in the HTML document. The `-` characters are used to trim any whitespace that might be generated during the inclusion process.
+
+2.
+   - This line renders an HTML heading element (`<h1>`) with the text "Home".
+
+3.
+   - This line renders a paragraph element (`<p>`) with the content of the `startingContent` variable interpolated in the document. The `<%= %>` syntax is used to output the value of the `startingContent` variable within the paragraph.
+
+4.
+   - This line starts a loop over the `posts` array. It iterates through each `post` object in the array and executes the code within the loop.
+
+5.
+   - This line renders an HTML heading element (`<h1>`) with the value of the `title` property of each `post` object.
+
+6.
+   - This line renders a paragraph element (`<p>`) with the truncated content of each `post` object. The `substring(0, 100)` function is used to limit the content to the first 100 characters, and the ellipsis ("...") is added at the end.
+
+7.
+   - This line renders an anchor element (`<a>`) with a link to the individual post page. The `post._id` value is used in the URL to identify the specific post.
+
+8.
+   - This line marks the end of the loop over the `posts` array.
+
+9. 
+   - This code includes the content of the "footer" partial file at this position in the HTML document. The `-` characters are used to trim any whitespace that might be generated during the inclusion process.
+Overall, this code suggests that there is a collection of `posts` available, and the code iterates over each post to display its title, truncated content, and a "Read More" link. The header and footer partials are included to provide consistent structure and styling to the HTML document.
+*/

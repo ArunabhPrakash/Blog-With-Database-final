@@ -1,4 +1,16 @@
-<%- include("partials/header"); -%>
-    <h1>About</h1>
-    <p> <%= aboutContent %> </p>
-<%- include("partials/footer"); -%>
+<%- include("partials/header"); -%>//1
+    <h1>About</h1>//2
+    <p> <%= aboutContent %> </p>//3
+<%- include("partials/footer"); -%>//4
+/*
+The code you provided appears to be using a templating engine, likely EJS, to include partial files in an HTML document. Let's break it down:
+1.
+   - This code includes the content of the "header" partial file at this position in the HTML document. The `-` characters are used to trim any whitespace that might be generated during the inclusion process.
+2.
+   - This line renders an HTML heading element (`<h1>`) with the text "About".
+3.
+   - This line renders a paragraph element (`<p>`) with the content of the `aboutContent` variable interpolated in the document. The `<%= %>` syntax is used to output the value of the `aboutContent` variable within the paragraph.
+4. 
+   - This code includes the content of the "footer" partial file at this position in the HTML document. The `-` characters are used to trim any whitespace that might be generated during the inclusion process.
+Overall, this code suggests that there are separate "header" and "footer" partial files that contain reusable HTML code for the header and footer sections, respectively. These partials are included in this HTML document to maintain consistency and avoid code duplication.
+*/
