@@ -27,6 +27,7 @@ The code you provided is a simple Express.js server that serves a blogging websi
 7. Start the server:
    - Listen on port 3000 for incoming HTTP requests and log a message to the console when the server starts.
 This code sets up a basic blogging website where users can create new posts, view existing posts, and navigate to the about and contact pages. The data is stored in a local MongoDB database named "blogDB" using Mongoose as the ODM (Object Data Modeling) tool. The EJS templating engine is used to render dynamic content in the views.
+commited to main~
 */
 const express = require("express");
 const bodyParser = require("body-parser");
