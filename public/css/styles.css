@@ -1,3 +1,32 @@
+/*
+The CSS code you provided contains styles for the layout and appearance of certain elements in an HTML document. Here's a breakdown of what each part does:
+1. The `html` selector:
+   - Sets the minimum height of the HTML element to 100% of the viewport height.
+   - Sets the position property to "relative" for positioning child elements.
+2. The `.container-fluid` class:
+   - Sets padding for top and bottom of the element to 70 pixels.
+3. The `.navbar` class:
+   - Sets padding for top and bottom of the navbar element to 15 pixels.
+   - Removes the default border and border-radius.
+   - Removes margin bottom.
+   - Sets the font size to 12 pixels.
+   - Sets the letter spacing to 5 pixels.
+   - Sets the background color to #FFD700 (gold).
+4. The `.navbar-nav  li a:hover` selector:
+   - Specifies the styles to apply when hovering over the links inside the navbar.
+   - Overrides the default color.
+5. The `.footer-padding` class:
+   - Adds padding to the bottom of the element with a value of 60 pixels.
+6. The `.footer` class:
+   - Positions the footer element absolutely at the bottom of its containing element.
+   - Sets the text alignment to center.
+   - Sets the background color to #FFD700 (gold).
+7. The `.footer p` selector:
+   - Sets the top margin of the paragraph inside the footer to 25 pixels.
+   - Sets the font size to 12 pixels.
+   - Sets the text color to #fff (white).
+These styles can be used to create a responsive layout with a fixed navbar at the top and a footer at the bottom of the page. The navbar has a gold background color, and the footer also has a gold background color with centered text.
+*/
 html {
   min-height: 100%;
   position: relative;
